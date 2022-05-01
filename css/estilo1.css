@@ -64,20 +64,6 @@
  
 }
 
-
-
-/* Inicio de pagina index */
-
-.mainContent {
-    grid-area: main;
-    background-color: black;
-    width: 100%;
-}
-
-.video{
-    height: 758px;
-}
-
 /* Footer */
 
 .foot{
@@ -94,7 +80,74 @@
     padding-right: 10px;
 }
 
- 
+
+
+/* INDEX */
+
+.mainContent {
+    grid-area: main;
+    background-color: black;
+    width: 100%;
+}
+
+.video{
+    height: 758px;
+}
+
+
+
+/* BIO */ 
+
+
+.bio {
+    height: auto;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+section {
+    display: block;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.bio{
+    height: auto;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.bio ul.social{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+li.button_lang{
+    cursor: pointer;
+}
+li.button_lang:first-child{
+    margin-right: 20px;
+}
+li.button_lang:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: width .3s;
+}
+li.button_lang:hover::after {
+    width: 100%;
+}
+li.button_lang.current_lang:after{
+    width: 100%;
+}
 
 /* CONTACT HTML */ 
 
