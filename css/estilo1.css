@@ -33,10 +33,10 @@
 }
 
 .titulo {
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.219);
     font-family: 'Lato', sans-serif;
-    margin-right: 830px;
-    animation: fadeIn 3s;
+    margin-right: 47%;
+    animation: fadeIn 5s;
 }
 
 
@@ -44,6 +44,7 @@
 .menu ul {
     list-style-type: none;
     justify-content: space-around;
+    font-size: 115%;
 }
 
 .menu ul li {
