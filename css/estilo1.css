@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+.boContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 200px;
+    grid-template-areas: "header"
+                         "main"
+                         "footer"
+}
+
+/* Menu */
+
+.enca{
+    grid-area: header;
+    width: 100%;
+}
+
+.menu {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    margin-right: 830px;
+    animation: fadeIn 3s;
+}
+
+
+
+.menu ul {
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-right: 5px;
+    line-height: 30px;
+}
+
+.menu ul li a{
+    color: whitesmoke;
+    text-decoration: none;    
+}
+
+.menu ul li a:hover{
+    color: blue;
+ 
+}
+
+
+
+/* Inicio de pagina index */
+
+.mainContent {
+    grid-area: main;
+    background-color: black;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+
+.foot{
+    height: auto;
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.redes a {
+    color: whitesmoke;
+    font-family:'Lato', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {color: whitesmoke;}
+    to {color: red;}
+}
+
+ 
+
+/* CONTACT HTML */ 
+
+.contactMain-Content {
+    grid-area: main;
+    background-color: black;
+}
+
+.contactMain-Content h3 {
+    color: rgb(255, 0, 0);
+    font-family:'Lato', sans-serif;
+    margin: 10px ;
+}
+
+.contact-form {
+    margin: 10px ;
+    width: 50px;
+    height: max-content;
+}
+
+.form {
+    background-color: rgba(175, 175, 175, 0.753);
+    font-family:'Lato', sans-serif;
+    color: black;
+    padding: 10px;
+    width: 250px;
+    height: 100%;
+}
+
+.form-imput {
+    padding: 15px;
+    margin: 30px;
+}
+
+
+/* RESPOSIVE */ 
+
+@media (max-width: 320px) {
+    
+    .boContainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 35px;
+        grid-template-areas: "header" "header" 
+                             "main"   "main" 
+                             "footer" "footer" 
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+
+}
