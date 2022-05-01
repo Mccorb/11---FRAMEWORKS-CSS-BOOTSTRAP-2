@@ -67,7 +67,7 @@
 /* Footer */
 
 .foot{
-    height: 25%;
+    height: 30%;
     grid-area: footer;
     background-color: black;
     display: flex;
@@ -154,31 +154,13 @@ li.button_lang.current_lang:after{
 .contactMain-Content {
     grid-area: main;
     background-color: black;
-}
-
-.contactMain-Content h3 {
-    color: rgb(255, 0, 0);
-    font-family:'Lato', sans-serif;
-    margin: 10px ;
-}
-
-.contact-form {
-    margin: 10px ;
-    width: 50px;
-    height: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .form {
-    background-color: rgba(175, 175, 175, 0.753);
-    font-family:'Lato', sans-serif;
-    color: black;
-    padding: 10px;
-    width: 250px;
-    height: 100%;
+    background-color: rgba(0, 0, 255, 0.356);
+    color: whitesmoke;
 }
 
-.form-imput {
-    padding: 15px;
-    margin: 30px;
-}
 
