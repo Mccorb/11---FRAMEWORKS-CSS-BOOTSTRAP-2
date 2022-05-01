@@ -8,7 +8,7 @@
 .boContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 200px;
+    grid-template-rows: auto auto 30%;
     grid-template-areas: "header"
                          "main"
                          "footer"
@@ -27,16 +27,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }
 
 .titulo {
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.219);
     font-family: 'Lato', sans-serif;
-    margin-right: 830px;
-    animation: fadeIn 3s;
+    margin-right: 50%;
+    animation: fadeIn 5s;
+    padding-top: 12x;
 }
 
 
@@ -44,6 +45,7 @@
 .menu ul {
     list-style-type: none;
     justify-content: space-around;
+    font-size: 115%;
 }
 
 .menu ul li {
@@ -62,100 +64,103 @@
  
 }
 
-
-
-/* Inicio de pagina index */
-
-.mainContent {
-    grid-area: main;
-    background-color: black;
-}
-
-.imagen {
-    width: 100%;
-    height: auto;
-}
-
 /* Footer */
 
 .foot{
-    height: auto;
+    height: 30%;
     grid-area: footer;
     background-color: black;
     display: flex;
     justify-content: flex-start;
 }
 
-.redes a {
-    color: whitesmoke;
-    font-family:'Lato', sans-serif;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 5px 5px 5px;
-    animation-name: example;
-    animation-duration: 4s;
+.icon {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-@keyframes example {
-    from {color: whitesmoke;}
-    to {color: red;}
+
+
+/* INDEX */
+
+.mainContent {
+    grid-area: main;
+    background-color: black;
+    width: 100%;
 }
 
- 
+.video{
+    height: 758px;
+}
+
+
+
+/* BIO */ 
+
+
+.bio {
+    height: auto;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+section {
+    display: block;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.bio{
+    height: auto;
+    color: white;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.bio ul.social{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+li.button_lang{
+    cursor: pointer;
+}
+li.button_lang:first-child{
+    margin-right: 20px;
+}
+li.button_lang:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: width .3s;
+}
+li.button_lang:hover::after {
+    width: 100%;
+}
+li.button_lang.current_lang:after{
+    width: 100%;
+}
 
 /* CONTACT HTML */ 
 
 .contactMain-Content {
     grid-area: main;
     background-color: black;
-}
-
-.contactMain-Content h3 {
-    color: rgb(255, 0, 0);
-    font-family:'Lato', sans-serif;
-    margin: 10px ;
-}
-
-.contact-form {
-    margin: 10px ;
-    width: 50px;
-    height: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .form {
-    background-color: rgba(175, 175, 175, 0.753);
-    font-family:'Lato', sans-serif;
-    color: black;
-    padding: 10px;
-    width: 250px;
-    height: 100%;
-}
-
-.form-imput {
-    padding: 15px;
-    margin: 30px;
+    background-color: rgba(0, 0, 255, 0.356);
+    color: whitesmoke;
 }
 
 
-/* RESPOSIVE */ 
-
-@media (max-width: 320px) {
-    
-    .boContainer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 35px;
-        grid-template-areas: "header" "header" 
-                             "main"   "main" 
-                             "footer" "footer" 
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        padding-top: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-    }
-
-
-}
